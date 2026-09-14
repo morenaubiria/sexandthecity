@@ -1,0 +1,54 @@
+.pagina-closet { background:#fcf8f5; color:#392c31; }
+.pagina-closet main { overflow:hidden; }
+.vestidor { max-width:1440px; margin:auto; padding:60px 4% 65px; display:grid; grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr); gap:45px; align-items:center; background:radial-gradient(ellipse at 85% 60%,#f2dce2,transparent 55%); }
+.closet-migas { font:10px/1.5 Arial,sans-serif; letter-spacing:1px; margin-bottom:40px; color:#8b6774; }
+.closet-migas a { color:inherit; }
+.archivo-label { font:10px/1.5 Arial,sans-serif; letter-spacing:2px; color:#956577; }
+.vestidor h1 { position:relative; font:normal clamp(60px,7vw,100px)/.95 Georgia,serif; margin:25px 0; letter-spacing:-4px; }
+.vestidor h1 em { color:#b76b87; font-weight:normal; padding-left:42px; }
+.vestidor h1 > span { color:#c88fa5; font-size:40px; display:inline-block; transform:rotate(15deg); margin-left:15px; }
+.vestidor-centro > p:not(.closet-migas) { font:17px/1.8 Georgia,serif; color:#806571; }
+.closet-boton { display:inline-block; margin-top:24px; padding:15px 0; border-bottom:1px solid #b87591; font:11px Arial,sans-serif; letter-spacing:1.3px; text-decoration:none; color:#854b64; }
+.portada-editorial { position:relative; padding:35px 0; }
+.portada-editorial figure { margin:0; background:#fffdf8; padding:14px 14px 28px; transform:rotate(3deg); box-shadow:0 15px 30px #63484f18; }
+.portada-editorial figure::before,.album-closet figure::before { content:''; position:absolute; width:95px; height:27px; background:#dca8b7a8; top:-12px; left:36%; transform:rotate(-7deg); }
+.portada-editorial img { width:100%; display:block; }
+.portada-editorial figcaption { font:italic 14px Georgia,serif; text-align:center; margin-top:18px; color:#7f626b; }
+.nota-portada { position:relative; display:block; text-align:right; font:italic 21px/1.25 Georgia,serif; color:#a46a81; margin:0 10px 25px; transform:rotate(-7deg); }
+.firma-portada { display:block; margin:30px 0 0 10px; color:#a46a81; font:italic 24px Georgia,serif; }
+.closet-indice { display:grid; grid-template-columns:repeat(3,1fr); padding:25px 6%; background:#f4e5e8; border-block:1px solid #e6c9d1; }
+.closet-indice a { display:flex; gap:20px; align-items:center; justify-content:center; padding:10px; color:#765160; text-decoration:none; font:16px Georgia,serif; }
+.closet-indice a + a { border-left:1px solid #dcc0c9; }
+.indice-numero { font:italic 40px Georgia,serif; color:#ba8b9a; }
+.closet-indice small { display:block; margin-top:8px; font:11px/1.5 Arial,sans-serif; }
+.closet-categoria { max-width:1350px; margin:auto; display:grid; grid-template-columns:230px minmax(0,1fr); gap:45px; padding:75px 5%; scroll-margin-top:30px; border-bottom:1px solid #ead5dc; }
+.closet-descripcion > span { font:italic 36px Georgia,serif; color:#c79baa; }
+.closet-descripcion h2 { font:normal 36px/1.15 Georgia,serif; margin:16px 0 20px; }
+.closet-descripcion p { color:#816872; font:16px/1.8 Georgia,serif; }
+.closet-descripcion > a { display:inline-block; margin-top:26px; color:#9c667c; font:10px Arial,sans-serif; letter-spacing:1px; text-decoration:none; border-bottom:1px solid #ddbeca; padding-bottom:8px; }
+.coleccion { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:22px; align-items:start; }
+.pieza { min-width:0; }
+.pieza-imagen { display:flex; align-items:center; justify-content:center; background:#fff; padding:20px 12px; border:1px solid #ecdee0; transition:transform .25s,box-shadow .25s; }
+.pieza-imagen:hover { transform:translateY(-5px); box-shadow:0 12px 18px #6f425810; }
+.pieza img { width:100%; height:310px; display:block; object-fit:contain; }
+.pieza h3 { font:normal 20px/1.3 Georgia,serif; margin:20px 0 10px; }
+.pieza summary { cursor:pointer; font:11px/1.6 Arial,sans-serif; color:#96657a; }
+.pieza details p { font:13px/1.8 Arial,sans-serif; color:#735d67; margin-top:12px; }
+.coleccion-zapatos { grid-template-columns:repeat(2,minmax(0,1fr)); gap:30px; background:#f5eeea; padding:25px; border:1px solid #e6d8d1; }
+.coleccion-zapatos .pieza-imagen { border:0; border-bottom:8px solid #e6d8d2; box-shadow:0 5px 6px #5a3f4310; }
+.coleccion-zapatos img { height:190px; }
+.coleccion-bolsos { grid-template-columns:repeat(2,minmax(0,1fr)); }
+.coleccion-bolsos img { height:270px; }
+.album-closet { display:grid; grid-template-columns:.8fr 1fr 1fr; gap:40px; align-items:center; background:#f2e3e6; padding:65px 6%; }
+.album-closet h2 { font:italic 36px/1.2 Georgia,serif; font-weight:normal; margin:18px 0; }
+.album-closet p { font:16px/1.7 Georgia,serif; color:#876571; }
+.album-closet figure { position:relative; margin:0; background:#fffcf8; padding:12px 12px 20px; transform:rotate(-3deg); box-shadow:0 8px 14px #68484e15; }
+.album-closet figure:last-child { transform:rotate(3deg); }
+.album-closet img { display:block; width:100%; height:auto; }
+.album-closet figcaption { font:italic 14px Georgia,serif; margin-top:14px; text-align:center; color:#866873; }
+.closet-fuentes { padding:25px 6%; font:11px/1.7 Arial,sans-serif; color:#947e86; text-align:center; }
+.closet-fuentes a { color:inherit; }
+.pagina-closet :focus-visible { outline:2px solid #a2637e; outline-offset:5px; }
+@media(max-width:950px) { .vestidor { gap:30px; padding:40px 5%; } .closet-categoria { grid-template-columns:1fr; gap:25px; padding:45px 5%; } .closet-descripcion { max-width:500px; } .album-closet { grid-template-columns:1fr 1fr; } .album-closet > div { grid-column:1/-1; } }
+@media(max-width:600px) { .vestidor { grid-template-columns:1fr; gap:10px; } .vestidor h1 { font-size:75px; } .closet-migas { margin-bottom:25px; } .portada-editorial { width:100%; max-width:none; box-sizing:border-box; margin:auto; padding:15px 8px; } .closet-indice { padding:12px; } .closet-indice a { flex-direction:column; gap:6px; text-align:center; font-size:12px; } .closet-indice small { font-size:10px; } .indice-numero { font-size:28px; } .coleccion { grid-template-columns:1fr; gap:30px; } .pieza img { height:350px; } .coleccion-zapatos,.coleccion-bolsos { grid-template-columns:repeat(2,minmax(0,1fr)); gap:16px; } .coleccion-zapatos { padding:12px; } .coleccion-zapatos img,.coleccion-bolsos img { height:150px; } .pieza h3 { font-size:18px; } .album-closet { gap:30px; padding:40px 6%; } }
+@media(prefers-reduced-motion:reduce) { .pieza-imagen { transition:none; } .pieza-imagen:hover { transform:none; } }

@@ -1,0 +1,44 @@
+.contacto-contenido { background:#fcf9f7; color:#49343e; }
+.contacto-hero { display:grid; grid-template-columns:.85fr 1.25fr; gap:60px; align-items:center; padding:55px 5%; max-width:1400px; margin:auto; }
+.contacto-migas,.contacto-etiqueta { font:11px/1.6 Arial,sans-serif; letter-spacing:1.5px; color:#98647c; }
+.contacto-migas a { color:inherit; }
+.contacto-hero h1 { font:normal clamp(40px,4.6vw,68px)/1.1 Georgia,serif; margin:30px 0; }
+.contacto-hero h1 span { display:block; font:italic .7em/1.6 Georgia,serif; color:#b3738d; }
+.contacto-divisor { display:flex; align-items:center; gap:20px; color:#bd8199; }
+.contacto-divisor::before,.contacto-divisor::after { content:''; height:1px; background:#dfbccb; flex:1; }
+.contacto-hero p:not(.contacto-migas) { font:18px/1.8 Georgia,serif; }
+.contacto-enlace { display:inline-block; margin-top:15px; color:#935c74; font:12px Arial,sans-serif; }
+.contacto-hero figure { position:relative; margin:0; padding:13px 13px 22px; background:#fff; box-shadow:0 10px 25px #6f465b1a; transform:rotate(2deg); }
+.contacto-hero figure::before { content:''; position:absolute; width:110px; height:28px; background:#dfb4c3ac; top:-12px; left:38%; transform:rotate(-6deg); }
+.contacto-hero img { width:100%; height:auto; display:block; }
+.contacto-hero figcaption { text-align:center; font:italic 14px Georgia,serif; color:#94727f; margin-top:17px; }
+.contacto-correo { display:grid; grid-template-columns:1.2fr .85fr; gap:35px; padding:25px 5% 40px; scroll-margin-top:25px; max-width:1400px; margin:auto; }
+.contacto-formulario { background:#f7e5ec; padding:35px; }
+.contacto-contenido h2 { font:normal 34px/1.2 Georgia,serif; margin:15px 0; }
+.contacto-formulario > p,.contacto-inspiracion p { line-height:1.7; }
+.contacto-formulario label { display:block; font:14px Arial,sans-serif; margin:22px 0 8px; }
+.contacto-formulario input,.contacto-formulario textarea { box-sizing:border-box; width:100%; padding:14px; border:1px solid #dfc4cf; background:#fffcfa; color:#49343e; border-radius:0; font:16px/1.5 Arial,sans-serif; }
+.contacto-formulario textarea { resize:vertical; min-height:160px; }
+#contador { display:block; text-align:right; color:#886576; font:11px/1.6 Arial,sans-serif; }
+.contacto-contenido button { padding:14px 20px; background:#efc7d7; border:1px solid #ad718c; color:#563a48; cursor:pointer; font:12px/1.5 Arial,sans-serif; }
+.contacto-contenido button:hover { background:#e6b3c8; }
+.contacto-contenido :focus-visible { outline:2px solid #a65f80; outline-offset:4px; }
+.contacto-aviso,#contacto-estado { font:13px/1.7 Arial,sans-serif; color:#795665; }
+#descargar-nota { color:#814762; font:12px/1.7 Arial,sans-serif; }
+.contacto-inspiracion { border:1px solid #edd4de; background:#fffdfb; padding:35px; }
+.contacto-inspiracion > a { display:flex; align-items:center; gap:25px; padding:22px 0; border-bottom:1px solid #f0dee5; color:inherit; text-decoration:none; }
+.contacto-inspiracion > a:hover h3 { color:#b16e8c; }
+.contacto-inspiracion > a > span,.contacto-inspiracion img { width:65px; height:65px; flex-shrink:0; object-fit:contain; font:48px/65px Georgia,serif; color:#c28ca4; text-align:center; }
+.contacto-inspiracion h3 { font:normal 23px Georgia,serif; margin:0 0 6px; }
+.contacto-inspiracion p { margin:0; color:#8d6b7b; }
+.contacto-novedades { margin-top:35px; }
+.contacto-novedades button { margin-top:18px; }
+.contacto-faq { padding:30px 5% 60px; text-align:center; }
+.contacto-preguntas { display:grid; grid-template-columns:repeat(4,1fr); gap:22px; align-items:start; margin-top:30px; }
+.contacto-preguntas details { text-align:left; border:1px solid #e7c8d5; background:#f8e9ee; padding:20px; }
+.contacto-preguntas summary { cursor:pointer; font:20px/1.4 Georgia,serif; }
+.contacto-preguntas summary span { display:block; text-align:center; font-size:42px; color:#ba829d; margin-bottom:18px; }
+.contacto-preguntas p { font:14px/1.8 Arial,sans-serif; }
+.contacto-preguntas a { color:#8a4e6b; }
+@media(max-width:850px) { .contacto-hero,.contacto-correo { grid-template-columns:1fr; gap:35px; } .contacto-hero figure { max-width:650px; } .contacto-preguntas { grid-template-columns:repeat(2,1fr); } }
+@media(max-width:500px) { .contacto-formulario,.contacto-inspiracion { padding:23px; } .contacto-preguntas { grid-template-columns:1fr; } .contacto-hero { padding-top:30px; } }

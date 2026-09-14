@@ -1,0 +1,55 @@
+.pagina-personajes { background: #f5f4f4; }
+.reparto-portada { display: grid; grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr); gap: 6%; align-items: center; padding: 45px 4% 50px; border-bottom: 2px solid #f1cedb; background: radial-gradient(ellipse at 20% 60%, #fff4f7, transparent 70%); }
+.reparto-migas { font: 12px Arial, sans-serif; margin-bottom: 40px; letter-spacing: 1px; }
+.reparto-migas a { color: inherit; text-decoration: none; }
+.reparto-portada h1 { font-size: clamp(42px, 5.5vw, 76px); font-weight: normal; line-height: 1.05; letter-spacing: -2px; }
+.separador-estrella { display: flex; gap: 20px; align-items: center; color: #bf8199; font-size: 25px; margin: 25px 0; }
+.separador-estrella::before, .separador-estrella::after { content: ''; height: 1px; background: #d9b8c5; flex: 1; }
+.reparto-portada p:not(.reparto-migas) { font-size: 18px; line-height: 1.7; color: #705661; }
+.reparto-enlace { display: inline-block; color: #855368; font: 12px Arial, sans-serif; letter-spacing: .7px; text-decoration: none; border-bottom: 1px solid #dbadc0; padding-bottom: 8px; margin-top: 22px; }
+.foto-reservada { background: #f8ccdc; aspect-ratio: 1; }
+.reparto-portada-foto { aspect-ratio: 1.5; background: #fffafa; border: 3px solid #f4cada; box-shadow: 9px 9px 0 #f0e1e7; }
+.reparto-principales { padding: 45px 3% 55px; border-bottom: 4px solid #e8c8d3; }
+.reparto-titulo { display: block; text-align: center; font-size: clamp(28px, 3vw, 40px); font-weight: normal; margin-bottom: 38px; }
+.reparto-titulo > span { display: block; color: #edb3c9; font-size: 22px; margin-top: 8px; }
+.reparto-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 25px; align-items: start; }
+.ficha-principal { position: relative; padding: 20px 17px 25px; background: #fffdfc; border: 2px solid #f4ccda; box-shadow: 0 9px 20px #8c5f7010; text-align: center; }
+.ficha-principal::before { content: ''; position: absolute; top: -14px; left: 22%; width: 56%; height: 28px; background: #e7c3c8b3; transform: rotate(-4deg); border-inline: 2px dashed #fff8; }
+.ficha-principal:nth-child(even)::before { transform: rotate(3deg); }
+.retrato-reservado { aspect-ratio: .9; margin-bottom: 23px; }
+.ficha-principal h3 { font-size: clamp(23px, 2.3vw, 32px); font-weight: normal; line-height: 1.1; min-height: 2.2em; }
+.estrella-ficha { color: #e9afc5; display: block; margin: 15px 0; }
+.ficha-resumen { font-size: 16px; line-height: 1.65; min-height: 10em; margin-bottom: 20px; color: #624d56; }
+.ficha-principal summary { display: list-item; list-style-position: inside; cursor: pointer; background: #f8d3e1; padding: 12px 8px; font: 11px/1.6 Arial, sans-serif; letter-spacing: .3px; }
+.ficha-principal summary:hover { background: #efbdd1; }
+.biografia { text-align: left; padding-top: 20px; }
+.biografia h4 { font-size: 23px; font-weight: normal; line-height: 1.2; margin: 18px 0; }
+.biografia p { font-size: 15px; line-height: 1.7; margin-bottom: 16px; }
+.interprete, .biografia .interprete { font: 11px/1.5 Arial, sans-serif; color: #9c7182; }
+.reparto-secundarios { padding: 35px 3% 45px; }
+.secundarios-grid { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 25px; }
+.ficha-secundaria { text-align: center; }
+.ficha-secundaria .foto-reservada { margin: 0 7px 20px; border: 4px solid #fffafa; box-shadow: 3px 4px 0 #edd9e1; }
+.ficha-secundaria h3 { font-size: 20px; font-weight: normal; }
+.ficha-secundaria > span { display: block; color: #e9afc5; margin: 12px 0; }
+.ficha-secundaria p:not(.interprete) { font-size: 14px; line-height: 1.7; margin-bottom: 14px; color: #624d56; }
+.reparto-fuentes { text-align: center; font: 10px/1.7 Arial, sans-serif; color: #9b7b88; margin-top: 35px; }
+.reparto-fuentes a { color: inherit; }
+.pagina-personajes a:focus-visible, .pagina-personajes summary:focus-visible { outline: 2px solid #b4728c; outline-offset: 4px; }
+@media (max-width: 1000px) { .reparto-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 40px 25px; } .secundarios-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 30px; } .ficha-resumen { min-height: 6.6em; } }
+@media (max-width: 650px) {
+  .reparto-portada { grid-template-columns: 1fr; padding: 30px 24px 40px; gap: 32px; }
+  .reparto-portada h1 { font-size: 50px; }
+  .reparto-migas { margin-bottom: 25px; }
+  .reparto-principales, .reparto-secundarios { padding: 35px 24px; }
+  .reparto-grid { grid-template-columns: 1fr; gap: 35px; }
+  .ficha-principal { max-width: 400px; width: 100%; margin: auto; }
+  .ficha-principal h3, .ficha-resumen { min-height: 0; }
+  .ficha-principal h3 { font-size: 30px; }
+  .secundarios-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 30px 20px; }
+}
+
+/* Fotos de portada y fichas, conservando el tamaño de los marcos. */
+.foto-reservada { position: relative; overflow: hidden; }
+.foto-reservada > img { position: absolute; inset: 0; display: block; width: 100%; height: 100%; object-fit: cover; object-position: center 30%; }
+.reparto-portada-foto > img { object-position: center; }

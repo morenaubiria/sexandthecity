@@ -1,0 +1,1112 @@
+/* style.css */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+body {
+  background: #f8f6f6;
+  color: #191516;
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+}
+
+
+/* HEADER */
+
+header {
+
+  height: 82px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  padding: 0 28px;
+
+  border-top: 3px solid #efcbd2;
+
+  border-bottom: 3px solid #efcbd2;
+
+  background: #fafafa;
+
+}
+
+
+.logo {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+}
+
+
+.logo img {
+
+  width: 30px;
+
+  height: auto;
+
+  display: block;
+
+}
+
+/* Regla más específica para la imagen secundaria del logo (anular .logo img) */
+.logo img.logo-secundaria {
+  width: 200px;
+  max-width: 48%;
+  height: auto;
+  display: block;
+}
+
+
+.logo-secundaria {
+
+  width: 180px;
+
+  max-width: 40%;
+
+  height: auto;
+
+  display: block;
+
+}
+
+
+nav {
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: flex-end;
+
+  gap: 26px;
+
+  margin-left: auto;
+
+  margin-right: 12px;
+
+}
+
+
+nav a {
+
+  font-size: 18px;
+
+  color: #222;
+
+  text-decoration: none;
+
+}
+
+
+nav a:hover {
+
+  color: #c993a0;
+
+}
+
+
+.menu {
+
+  color: #e7a9b7;
+
+  font-size: 20px;
+
+  cursor: pointer;
+
+}
+
+
+
+/* HERO */
+
+.hero {
+
+  min-height: 350px;
+
+  display: grid;
+
+  grid-template-columns:
+    36% 64%;
+
+  align-items: center;
+
+  padding: 30px 25px;
+
+  border-bottom:
+    3px solid #efd0d5;
+
+}
+
+
+.hero-text h1 {
+
+  font-size: 96px;
+
+  font-weight: normal;
+
+  line-height: 1.02;
+
+  letter-spacing: 2px;
+
+  margin-bottom: 30px;
+
+}
+
+
+.hero-text p {
+
+  font-size: 24px;
+
+  line-height: 1.4;
+
+  margin-bottom: 26px;
+
+}
+
+
+.hero-imagen img {
+
+  width: 100%;
+
+  display: block;
+
+}
+
+
+.boton {
+
+  display: inline-block;
+
+
+  padding:
+    18px 28px;
+
+  background: #efd0d6;
+
+  color: #4e4245;
+
+  text-decoration: none;
+
+  font-size: 18px;
+
+  transition: .3s;
+
+}
+
+
+.boton:hover {
+
+  background: #dcaeba;
+
+}
+
+
+
+/* PERSONAJES */
+
+.personajes {
+
+  padding:
+    20px 35px 10px;
+
+  position: relative;
+
+}
+
+
+.personajes h2 {
+
+  text-align: center;
+
+  font-size: 32px;
+
+  font-weight: normal;
+
+  text-decoration:
+    underline #ebb6c2;
+
+
+  margin-bottom: 30px;
+
+}
+
+/* Evitar color azul en enlaces de las tarjetas de personajes */
+.personaje-link {
+  color: inherit;
+  text-decoration: none;
+  display: block;
+}
+.personaje-link:hover {
+  color: #c993a0;
+}
+
+/* Enlaces dentro del overlay de detalle */
+.detalle-personaje a {
+  color: inherit;
+  text-decoration: none;
+}
+
+
+.personajes-grid {
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(4, 1fr);
+
+  gap: 45px;
+
+  text-align: center;
+
+}
+
+
+.personajes article img {
+
+  width: 140px;
+
+  height: 140px;
+
+  object-fit: cover;
+
+  border-radius: 50%;
+
+  margin-bottom: 18px;
+
+}
+
+
+.personajes h3 {
+
+  font-size: 18px;
+
+  font-weight: normal;
+
+  line-height: 1.2;
+
+}
+
+
+.personajes span {
+
+  color: #e8afbb;
+
+  font-size: 32px;
+
+}
+
+
+
+/* COLUMN */
+
+.column {
+  width: 100%;
+  background: #b68e98;
+}
+
+.column-collage {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+
+.boton-claro {
+
+  display: inline-block;
+
+  background: #f7dce2;
+
+  padding:
+    12px 18px;
+
+  text-decoration: none;
+
+  color: #211c1e;
+
+  font-size: 10px;
+
+}
+
+
+
+/* CLOSET */
+
+.closet {
+
+  padding:
+    25px 60px;
+
+  background: #fafafa;
+
+}
+
+
+.closet > h2 {
+
+  text-align: center;
+
+  font-size: 23px;
+
+  font-weight: normal;
+
+  margin-bottom: 18px;
+
+}
+
+
+.closet-grid {
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, 1fr);
+
+  gap: 36px;
+
+}
+
+
+.closet article {
+
+  height: 150px;
+
+  background: #efd6da;
+
+  border:
+    4px solid #efcbd2;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+
+  align-items: center;
+
+}
+
+
+.closet article img {
+
+  max-width: 120px;
+
+  max-height: 105px;
+
+  object-fit: contain;
+
+}
+
+
+.closet h3 {
+
+  font-size: 12px;
+
+  font-weight: normal;
+
+}
+
+
+
+/* NEW YORK */
+
+.new-york {
+
+  min-height: 260px;
+
+  display: grid;
+
+  grid-template-columns:
+    35% 65%;
+
+  background: #f4ded6;
+
+}
+
+
+.ny-text {
+
+  padding:
+    25px 20px;
+
+}
+
+
+.ny-text h2 {
+
+  font-size: 43px;
+
+  font-weight: normal;
+
+  line-height: 1;
+
+  margin-bottom: 25px;
+
+}
+
+
+.ny-text p {
+
+  font-size: 12px;
+
+  margin-bottom: 20px;
+
+}
+
+
+.ny-imagen img {
+
+  width: 100%;
+
+  height: 100%;
+
+  object-fit: cover;
+
+}
+
+
+
+/* EPISODIOS */
+
+.episodios {
+
+  padding:
+    18px 67px 12px;
+
+  background: #fafafa;
+
+  border-bottom:
+    3px solid #efd0d5;
+
+}
+
+
+.episodios-titulo {
+
+  text-align: center;
+
+  margin-bottom: 20px;
+
+}
+
+
+.episodios-titulo h2 {
+
+  font-size: 21px;
+
+  font-weight: normal;
+
+  text-decoration:
+    underline #eeb9c4;
+
+}
+
+
+.episodios-titulo p {
+
+  font-size: 9px;
+
+  line-height: 1.5;
+
+  margin-top: 7px;
+
+}
+
+
+.temporadas {
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(6, 1fr);
+
+  gap: 10px;
+
+}
+
+
+.temporadas div {
+
+  height: 68px;
+
+  border:
+    4px solid #efcbd2;
+
+  background:
+    #f1dde1;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: center;
+
+}
+
+
+.temporadas strong {
+
+  font-size: 16px;
+
+  font-weight: normal;
+
+}
+
+
+.temporadas span {
+
+  font-size: 7px;
+
+  margin-top: 5px;
+
+}
+
+
+
+/* FINAL */
+
+.final {
+
+  min-height: 270px;
+
+  display: grid;
+
+  grid-template-columns:
+    33% 40% 27%;
+
+  align-items: center;
+
+  padding: 20px;
+
+  background: #fafafa;
+
+}
+
+
+.final-imagen img {
+
+  width: 100%;
+
+  transform: rotate(-8deg);
+
+}
+
+
+.final-text {
+
+  text-align: center;
+
+}
+
+
+.final-text h2 {
+
+  font-size: 41px;
+
+  font-weight: normal;
+
+  line-height: 1.1;
+
+  margin-bottom: 32px;
+
+}
+
+
+.final-text p {
+
+  font-size: 10px;
+
+  line-height: 1.5;
+
+}
+
+
+.final-copa img {
+
+  width: 100%;
+
+}
+
+
+
+/* FOOTER */
+
+footer {
+
+  height: 58px;
+
+  background: #efd7dc;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 40px;
+
+}
+
+
+footer a {
+
+  color: #302729;
+
+  font-size: 11px;
+
+  text-decoration: none;
+
+}
+
+
+footer a:hover {
+
+  color: #ad7180;
+
+}
+
+
+
+/* RESPONSIVE */
+
+@media (max-width: 850px) {
+
+  nav {
+    display: none;
+  }
+
+
+  .hero {
+
+    grid-template-columns:
+      1fr;
+
+  }
+
+
+  .hero-text {
+
+    margin-bottom: 30px;
+
+  }
+
+  .hero-text h1 {
+    font-size: 48px;
+    line-height: 1.05;
+    margin-bottom: 18px;
+  }
+
+  .hero-text p {
+    font-size: 16px;
+    margin-bottom: 16px;
+  }
+
+  .boton {
+    font-size: 14px;
+    padding: 12px 18px;
+  }
+
+  /* Ajuste del logo secundario en pantallas pequeñas */
+  .logo img.logo-secundaria {
+    width: 110px;
+    max-width: 45%;
+  }
+
+
+  .personajes-grid {
+
+    grid-template-columns:
+      repeat(2, 1fr);
+
+  }
+
+
+  .closet-grid {
+
+    grid-template-columns:
+      1fr;
+
+  }
+
+
+  .new-york {
+
+    grid-template-columns:
+      1fr;
+
+  }
+
+
+  .temporadas {
+
+    grid-template-columns:
+      repeat(3, 1fr);
+
+  }
+
+
+  .final {
+
+    grid-template-columns:
+      1fr;
+
+    gap: 30px;
+
+  }
+
+
+  footer {
+
+    flex-wrap: wrap;
+
+    height: auto;
+
+    padding: 20px;
+
+  }
+
+}
+
+
+/* DETALLES DE PERSONAJES */
+body.detalle-abierto { overflow: hidden; }
+.detalle-personajes {
+  margin: auto;
+  width: min(1100px, calc(100% - 40px));
+  max-height: calc(100dvh - 40px);
+  padding: 0;
+  border: 0;
+  background: #fff;
+  color: #302729;
+  box-shadow: 0 24px 90px #30272940;
+}
+.detalle-personajes::backdrop { background: #30272999; backdrop-filter: blur(5px); }
+.detalle-personaje {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1.45fr 1fr;
+  gap: 6%;
+  align-items: center;
+  padding: 85px 6%;
+  min-height: 530px;
+}
+.detalle-personaje[hidden] { display: none; }
+.cerrar-detalle {
+  position: absolute; top: 15px; right: 22px;
+  border: 0; background: transparent; color: #aa7589;
+  font-size: 32px; cursor: pointer;
+}
+.detalle-camara {
+  position: relative;
+  aspect-ratio: 1.55;
+  border: 5px solid #b57e98;
+  border-radius: 30px;
+  background: linear-gradient(125deg, #f9deea, #cc96af 45%, #f2cddd 75%, #b97d9a);
+  box-shadow: inset 0 0 0 3px #fbe6ef, inset 0 -8px 10px #8a536c80, 0 5px 0 #835d70;
+  transform: rotate(-2deg);
+}
+.camara-marca { position: absolute; top: 4%; left: 9%; font: italic 11px Georgia, serif; color: #745369; }
+.camara-pantalla {
+  position: absolute; inset: 14% 24% 9% 4%;
+  border: 9px solid #252024; border-radius: 10px;
+  background: #171517; overflow: hidden;
+}
+.camara-pantalla img { display: block; width: 100%; height: 100%; object-fit: contain; filter: grayscale(1); }
+.camara-controles {
+  position: absolute; inset: 6% 3% 6% 79%;
+  display: flex; flex-direction: column; align-items: center; justify-content: space-between;
+  color: #735b68; font: 12px Arial, sans-serif;
+}
+.camara-flash { width: 100%; height: 10%; border: 3px solid #a77e90; border-radius: 15px; background: linear-gradient(90deg,#f8f4ee,#a9aca8,#fff); }
+.camara-rueda, .camara-dial { display: grid; place-items: center; width: 100%; aspect-ratio: 1; border: 3px double #8f8588; border-radius: 50%; background: linear-gradient(120deg,#f9f8f5,#aaa5a6,#e2dcdf); font-size: 28px; }
+.camara-dial { width: 85%; font-size: 12px; }
+.camara-menu { font-size: 9px; }
+.camara-pie { position: absolute; bottom: 2%; left: 24%; font: 9px Arial, sans-serif; letter-spacing: 2px; color: #694858; }
+.detalle-info { position: relative; }
+.detalle-etiqueta { color: #b68199; font: 10px Arial, sans-serif; letter-spacing: 3px; }
+.detalle-info h2 { color: #ca96af; font-size: clamp(30px, 4vw, 46px); font-weight: normal; font-style: italic; line-height: 1.05; margin: 12px 0; }
+.detalle-info p { font: 13px/1.6 Arial, sans-serif; margin-bottom: 16px; }
+.detalle-info .detalle-lema { color: #a76d87; font-family: Georgia, serif; font-style: italic; }
+.volver-detalle { border: 0; padding: 12px 17px; margin-top: 10px; background: #f7dfed; color: #513c48; font: 10px Arial, sans-serif; letter-spacing: .5px; cursor: pointer; }
+.volver-detalle span { margin-left: 15px; }
+.volver-detalle:hover { background: #edc6dc; }
+.detalle-personajes button:focus-visible { outline: 2px solid #9b5e7d; outline-offset: 4px; }
+@media (max-width: 650px) {
+  .detalle-personajes { width: calc(100% - 24px); max-height: calc(100dvh - 24px); }
+  .detalle-personaje { grid-template-columns: 1fr; gap: 35px; padding: 60px 25px 32px; }
+  .detalle-camara { width: 100%; max-width: 420px; margin: auto; }
+  .detalle-info h2 { font-size: 36px; }
+}
+
+/* Enlace sobre la flecha del collage de Carrie. */
+.column { position: relative; }
+.column-abrir {
+  position: absolute;
+  left: 63.7%;
+  top: 67.3%;
+  width: 23.5%;
+  height: 8.8%;
+  transform: rotate(12deg);
+  border-radius: 2px;
+}
+.column-abrir:hover { background: #ffffff25; }
+.column-abrir:focus-visible { outline: 3px solid #6f3e55; outline-offset: 4px; }
+
+/* Header y footer compartidos por todas las páginas. */
+.site-header {
+  position: relative;
+  height: 90px;
+  padding: 0 3%;
+  background: #fffafa;
+  border-color: #efd0db;
+}
+.site-header .logo { flex: 0 0 auto; gap: 9px; text-decoration: none; }
+.site-header .logo img { width: 30px; }
+.site-header .logo img.logo-secundaria { width: 155px; max-width: none; }
+.site-header nav { display: flex; gap: clamp(18px, 2.5vw, 36px); margin: 0 0 0 auto; }
+.site-header nav a { font-size: 13px; letter-spacing: .4px; padding: 12px 0; color: #49383f; }
+.site-header nav a:hover, .site-footer a:hover { color: #b4728c; }
+.site-header .menu { display: none; border: 0; background: transparent; min-width: 44px; min-height: 44px; color: #bb7e98; }
+.site-header a:focus-visible, .site-header button:focus-visible, .site-footer a:focus-visible { outline: 2px solid #b4728c; outline-offset: 5px; }
+.site-footer {
+  height: auto;
+  min-height: 86px;
+  padding: 24px 5%;
+  gap: 20px 38px;
+  flex-wrap: wrap;
+  background: #efd7df;
+  border-top: 1px solid #e5c0cd;
+}
+.site-footer a { color: #49383f; font-size: 12px; letter-spacing: .5px; padding: 8px 0; }
+@media (max-width: 1050px) {
+  .site-header .menu { display: block; margin-left: auto; }
+  .site-header nav { display: none; }
+  .site-header nav.abierto {
+    display: flex;
+    position: absolute;
+    top: 100%; left: 0; right: 0;
+    z-index: 20;
+    flex-direction: column;
+    gap: 8px;
+    margin: 0;
+    padding: 20px;
+    background: #fffafa;
+    border-bottom: 2px solid #efd0db;
+    box-shadow: 0 12px 20px #835b7015;
+  }
+}
+@media (max-width: 650px) {
+  .site-header { height: 80px; padding: 0 20px; }
+  .site-header .logo img.logo-secundaria { width: 135px; }
+  .site-footer { gap: 12px 24px; }
+}
+
+/* Inicio: composición editorial y detalles de diario. */
+.pagina-inicio main { overflow: clip; }
+.pagina-inicio .hero {
+  grid-template-columns: minmax(0, .85fr) minmax(0, 1.4fr);
+  position: relative;
+  gap: 3%;
+  padding: clamp(35px, 5vw, 75px) 5%;
+  min-height: 480px;
+  background: radial-gradient(ellipse at 75% 50%, #f4dde7, transparent 65%), #fffafa;
+}
+.pagina-inicio .hero-text { position: relative; z-index: 1; margin: 0; }
+.pagina-inicio .hero-text h1 { font-size: clamp(50px, 6.8vw, 100px); line-height: 1; letter-spacing: -2px; margin-bottom: 24px; }
+.pagina-inicio .hero-text p { font-size: clamp(15px, 1.6vw, 22px); line-height: 1.65; letter-spacing: 1px; margin-bottom: 28px; color: #795663; }
+.pagina-inicio .boton { font-size: 13px; padding: 15px 22px; border: 1px solid #e4b4c5; background: #f2d5df; border-radius: 3px; letter-spacing: .6px; }
+.pagina-inicio .boton:hover { background: #eac0d0; }
+.pagina-inicio .hero-imagen { position: relative; aspect-ratio: 1.75; overflow: hidden; transform: rotate(-2deg); }
+.pagina-inicio .hero-imagen img { position: absolute; top: 0; left: 0; width: 100%; height: auto; }
+.pagina-inicio .personajes { padding: 42px 6% 35px; background: #fffafa; }
+.pagina-inicio .personajes h2 { font-size: clamp(25px, 3vw, 36px); text-underline-offset: 9px; margin-bottom: 40px; }
+.pagina-inicio .personajes-grid { gap: 25px; max-width: 1100px; margin: auto; }
+.pagina-inicio .personajes article img { width: clamp(120px, 14vw, 180px); height: clamp(120px, 14vw, 180px); border: 5px solid #f6e3ea; box-shadow: 0 7px 16px #90627415; }
+.pagina-inicio .personajes h3 { font-size: 19px; line-height: 1.35; }
+.pagina-inicio .closet { position: relative; padding: 48px 6% 55px; background: #fcf5f7; }
+.pagina-inicio .closet > h2 { font-size: 32px; margin-bottom: 30px; }
+.pagina-inicio .closet-grid { max-width: 1150px; margin: auto; gap: 28px; }
+.pagina-inicio .closet article { height: 225px; border: 1px solid #e8c5d1; background: #fffafa; box-shadow: 5px 6px 0 #efdbe3; border-radius: 4px; gap: 14px; }
+.pagina-inicio .closet article img { max-width: 165px; max-height: 145px; }
+.pagina-inicio .closet h3 { font-size: 15px; letter-spacing: .7px; }
+.pagina-inicio .new-york { position: relative; display: grid; grid-template-columns: 1fr; min-height: 460px; padding: 45px 5%; isolation: isolate; background: #f7e5df; }
+.pagina-inicio .ny-imagen { position: absolute; inset: 0; z-index: -2; }
+.pagina-inicio .ny-imagen img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: center right; }
+.pagina-inicio .new-york::before { content: ''; position: absolute; inset: 0; z-index: -1; background: linear-gradient(90deg, #fff5edd9, #fff5ed50 38%, transparent 62%); }
+.pagina-inicio .ny-text { width: min(360px, 38%); align-self: center; padding: 30px 25px; background: #fffaf0df; border: 1px solid #f3d4da; box-shadow: 0 12px 30px #84586516; transform: rotate(-2deg); }
+.pagina-inicio .ny-text::before { content: ''; position: absolute; width: 90px; height: 22px; top: -11px; left: calc(50% - 45px); background: #eab0c3a6; transform: rotate(5deg); }
+.pagina-inicio .ny-text h2 { font-size: clamp(38px, 4.5vw, 64px); margin-bottom: 22px; letter-spacing: -1px; }
+.pagina-inicio .ny-text p { font-size: 15px; line-height: 1.65; margin-bottom: 24px; }
+.pagina-inicio .episodios { position: relative; padding: 55px 6% 60px; background: #fffafa; }
+.pagina-inicio .episodios-titulo { margin-bottom: 35px; }
+.pagina-inicio .episodios-titulo h2 { font-size: clamp(32px, 4vw, 48px); text-underline-offset: 9px; }
+.pagina-inicio .episodios-titulo p { font-size: 15px; line-height: 1.8; margin-top: 22px; color: #795663; }
+.pagina-inicio .temporadas { gap: 20px; max-width: 1200px; margin: auto; }
+.pagina-inicio .temporadas div { position: relative; height: 150px; gap: 12px; border: 1px solid #e7bfce; background: linear-gradient(145deg, #fdf3f6, #efd3df); border-radius: 3px; box-shadow: 4px 5px 0 #f3e5eb; }
+.pagina-inicio .temporadas div:nth-child(even) { transform: rotate(2deg); }
+.pagina-inicio .temporadas strong { font-size: 44px; color: #a06980; }
+.pagina-inicio .temporadas span { font-size: 12px; letter-spacing: .8px; }
+.pagina-inicio .final { position: relative; padding: 40px 5%; gap: 25px; grid-template-columns: 30% 40% 25%; }
+.sticker { position: absolute; color: #ca8ca7; font: 52px/1 Georgia, serif; text-shadow: 2px 2px white, -2px -2px white, 2px -2px white, -2px 2px white; pointer-events: none; z-index: 2; }
+.sticker-hero { top: 18px; right: 4%; transform: rotate(12deg); }
+.sticker-personajes { top: 27px; left: 5%; transform: rotate(-18deg); }
+.sticker-closet { right: 5%; top: 25px; color: #bca8ba; transform: rotate(15deg); }
+.sticker-episodios { left: 6%; top: 30px; transform: rotate(-12deg); }
+.sticker-final { right: 29%; top: 18px; transform: rotate(18deg); }
+@media (max-width: 1000px) {
+  .pagina-inicio .temporadas { grid-template-columns: repeat(3, 1fr); }
+  .pagina-inicio .ny-text { width: min(340px, 45%); }
+}
+@media (max-width: 650px) {
+  .pagina-inicio .hero { grid-template-columns: 1fr; padding: 40px 24px 25px; gap: 30px; }
+  .pagina-inicio .hero-text { text-align: center; }
+  .pagina-inicio .hero-text h1 { font-size: clamp(48px, 12vw, 72px); }
+  .pagina-inicio .hero-imagen { width: 100%; max-width: 500px; justify-self: center; }
+  .pagina-inicio .personajes, .pagina-inicio .closet, .pagina-inicio .episodios { padding: 40px 24px; }
+  .pagina-inicio .personajes h2, .pagina-inicio .closet > h2 { font-size: 25px; }
+  .pagina-inicio .personajes-grid { gap: 24px 15px; }
+  .pagina-inicio .personajes h3 { font-size: 16px; }
+  .pagina-inicio .closet-grid { grid-template-columns: 1fr; gap: 25px; }
+  .pagina-inicio .new-york { min-height: 540px; padding: 30px 24px; align-items: end; }
+  .pagina-inicio .ny-imagen img { object-position: 72% center; }
+  .pagina-inicio .new-york::before { background: linear-gradient(0deg, #fff5ed9c, transparent 80%); }
+  .pagina-inicio .ny-text { width: min(300px, 90%); align-self: end; padding: 22px; }
+  .pagina-inicio .ny-text h2 { font-size: 42px; }
+  .pagina-inicio .temporadas { gap: 18px 12px; grid-template-columns: repeat(2, 1fr); }
+  .pagina-inicio .temporadas div { height: 140px; }
+  .pagina-inicio .episodios-titulo p { font-size: 13px; }
+  .pagina-inicio .final { grid-template-columns: 1fr; padding: 40px 30px; }
+  .pagina-inicio .final-imagen, .pagina-inicio .final-copa { width: min(100%, 300px); margin: auto; }
+  .sticker { font-size: 34px; }
+  .sticker-personajes { left: 6px; top: 12px; }
+  .sticker-closet { right: 8px; top: 12px; }
+  .sticker-episodios { left: 12px; top: 12px; }
+}
+
+/* Proporciones compartidas de las referencias del menú y del cierre. */
+.site-header { height: 110px; padding: 0 12px; background: #f5f4f4; border-top: 4px solid #e8c8d3; border-bottom: 4px solid #e8c8d3; }
+.site-header .logo { gap: 7px; }
+.site-header .logo img { width: 48px; }
+.site-header .logo img.logo-secundaria { width: 145px; }
+.site-header nav { gap: clamp(22px, 4vw, 55px); }
+.site-header nav a { font-size: 14px; letter-spacing: 0; color: #191516; }
+.site-header .menu { display: block; margin-left: 24px; font-size: 25px; color: #e8c8d3; }
+main > .cierre-referencia, .pagina-inicio main > .cierre-referencia {
+  position: relative; display: block; height: 30.3vw; min-height: 0;
+  padding: 0; margin: 0; border-top: 4px solid #e8c8d3; background: #f5f4f4;
+}
+.cierre-referencia .final-imagen, .pagina-inicio .cierre-referencia .final-imagen { position: absolute; left: -1%; top: -6.5vw; width: 38%; max-width: none; margin: 0; }
+.cierre-referencia .final-imagen img { display: block; width: 100%; transform: none; }
+.cierre-referencia .final-text { position: absolute; left: 34.7%; top: 5vw; width: 35.8%; }
+.cierre-referencia .final-text h2 { font-size: 6.2vw; font-weight: normal; font-variant: small-caps; line-height: 1; text-align: left; margin: 0 0 3vw; }
+.cierre-referencia .final-text h2 span { display: block; white-space: nowrap; }
+.cierre-referencia .final-text h2 span + span { text-align: right; }
+.cierre-referencia .final-text h2 i { color: #eed5de; font-style: normal; font-size: 9vw; vertical-align: -.12em; margin-right: -.1em; }
+.cierre-referencia .final-text p { border-top: .5vw solid #efd7df; padding-top: 1.1vw; font-size: 1.5vw; font-variant: small-caps; line-height: 1.4; }
+.cierre-referencia .final-copa, .pagina-inicio .cierre-referencia .final-copa { position: absolute; top: -5.1vw; right: -2.7%; width: 42%; max-width: none; margin: 0; z-index: 2; pointer-events: none; }
+.cierre-referencia .final-copa img { display: block; width: 100%; }
+.site-footer { min-height: 0; height: 7.6vw; padding: 0 17.5% 0 28%; gap: 3.4vw; flex-wrap: nowrap; background: #efd7df; border: 0; }
+.site-footer a { font-size: 1.5vw; letter-spacing: 0; white-space: nowrap; padding: 8px 0; }
+body.menu-abierto { overflow: hidden; }
+.menu-overlay { margin: auto; width: min(460px, calc(100% - 32px)); max-height: calc(100dvh - 40px); padding: 44px 35px; border: 1px solid #e7c0cf; background: #fffafa; color: #49383f; box-shadow: 0 20px 80px #49383f40; }
+.menu-overlay::backdrop { background: #49383f80; backdrop-filter: blur(5px); }
+.menu-cerrar { position: absolute; top: 8px; right: 14px; background: transparent; border: 0; font-size: 32px; color: #b4728c; cursor: pointer; width: 44px; height: 44px; }
+.menu-adorno { display: block; color: #d3a0b5; font-size: 40px; text-align: center; }
+.menu-overlay h2 { font-size: 30px; font-weight: normal; text-align: center; margin: 12px 0 25px; }
+.menu-overlay .menu-enlaces { display: flex; flex-direction: column; gap: 8px; margin: 0; }
+.menu-enlaces a { display: block; font-size: 19px; padding: 10px; color: #49383f; text-decoration: none; }
+.menu-enlaces .menu-contacto { background: #f3dce5; text-align: center; width: 100%; margin-top: 12px; }
+.menu-overlay :focus-visible { outline: 2px solid #b4728c; outline-offset: 3px; }
+.contacto-pagina { min-height: 65vh; padding: 70px 8%; text-align: center; background: #fffafa; }
+.contacto-pagina h1 { font-size: 64px; font-weight: normal; margin: 30px 0; }
+.contacto-pagina > span { display: block; color: #d3a0b5; font-size: 60px; margin-bottom: 30px; }
+@media (max-width: 1050px) { .site-header .menu { margin-left: auto; } }
+@media (max-width: 650px) {
+  .site-header { height: 90px; }
+  .site-header .logo img { width: 38px; }
+  .site-header .logo img.logo-secundaria { width: 135px; }
+  .site-footer { height: auto; min-height: 80px; padding: 18px 20px; flex-wrap: wrap; gap: 12px 22px; }
+  .site-footer a { font-size: 12px; }
+  .cierre-referencia .final-text p { font-size: 1.8vw; }
+}
+/* La copa se extiende sobre la franja del footer. */
+body { overflow-x: clip; }
+.pagina-inicio main { overflow: visible; }
+
+.explorar-personajes { text-align: center; margin: 28px auto 0; color: #916176; }
+.explorar-personajes > span { display: block; font-size: 28px; margin-bottom: 7px; }
+.explorar-personajes p { font-size: 16px; line-height: 1.5; margin-bottom: 15px; }
+.explorar-personajes a { display: inline-block; padding: 14px 22px; background: #f5dce6; border: 1px solid #e6bdcd; color: #744758; font: 12px/1.5 Arial, sans-serif; text-decoration: none; letter-spacing: .6px; }
+.explorar-personajes a:hover { background: #edc6d6; }
+
+/* Temporadas del inicio: enlaces a sus resúmenes completos. */
+.pagina-inicio .temporadas-inicio { align-items: stretch; }
+.temporadas-inicio > a { display: flex; flex-direction: column; justify-content: center; align-items: center; min-height: 195px; gap: 10px; padding: 20px 8px; border: 1px solid #e7bfce; border-radius: 3px; background: linear-gradient(145deg, #fff8fb, #efd3df); box-shadow: 4px 5px 0 #f3e5eb; color: #795663; text-align: center; text-decoration: none; transition: transform .2s, box-shadow .2s; }
+.temporadas-inicio > a:hover { transform: translateY(-4px); box-shadow: 5px 9px 0 #f0dbe5; }
+.temporadas-inicio small { font: 10px/1.5 Arial, sans-serif; }
+.temporadas-inicio em { font: 11px Arial, sans-serif; border-bottom: 1px solid #d8a6bb; padding-bottom: 4px; margin-top: 8px; }
+.temporadas-inicio > a:focus-visible { outline: 2px solid #a96885; outline-offset: 5px; }
+@media (prefers-reduced-motion: reduce) { .temporadas-inicio > a { transition: none; } }
+
+.closet-inicio-link { display: flex; width: 100%; height: 100%; align-items: center; justify-content: center; flex-direction: column; gap: 14px; color: inherit; text-decoration: none; }
+.closet-titulo-link { color: inherit; text-decoration: none; }
+.closet-inicio-link:hover, .closet-titulo-link:hover { color: #b4728c; }
+.closet-inicio-link:focus-visible { outline: 2px solid #b4728c; outline-offset: 5px; }
+
+/* Navegación compartida: las seis secciones en el mismo orden. */
+.site-header #site-nav { gap: clamp(14px, 2.2vw, 32px); }
+.site-header #site-nav a { white-space: nowrap; }
+.site-footer { padding-left: 5%; padding-right: 17.5%; gap: clamp(14px, 2.3vw, 32px); justify-content: center; }
+.site-footer a { font-size: clamp(11px, 1.2vw, 17px); }
+@media (max-width: 900px) {
+  .site-footer { height: auto; min-height: 80px; padding: 18px 20px; flex-wrap: wrap; gap: 12px 22px; }
+  .site-footer a { font-size: 12px; }
+}
+
+/* Recortes de las láminas: repartidos en el aire entre secciones. */
+.recortes-decorativos {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 25px;
+  padding: 10px clamp(25px, 8vw, 120px);
+  min-height: 110px;
+  box-sizing: border-box;
+  pointer-events: none;
+  user-select: none;
+  overflow: hidden;
+}
+.recorte-decorativo {
+  display: block;
+  flex: none;
+  background-repeat: no-repeat;
+  transform: rotate(var(--giro));
+  mix-blend-mode: multiply;
+}
+.recorte-decorativo:nth-child(2) { margin-left: 12%; }
+@media (max-width: 600px) {
+  .recortes-decorativos { min-height: 90px; padding: 5px 20px; gap: 8px; }
+  .recorte-decorativo { zoom: .75; }
+  .recorte-decorativo:nth-child(2) { margin-left: 0; }
+}

@@ -1,0 +1,54 @@
+.pagina-episodios { background: #f5f4f4; }
+.ep-portada { display: grid; grid-template-columns: 1fr 1fr; gap: 10%; align-items: center; padding: 50px 7%; border-bottom: 4px solid #e8c8d3; }
+.ep-portada h1 { font-weight: normal; font-size: clamp(44px, 6vw, 80px); line-height: 1.05; margin: 30px 0; }
+.ep-portada > div > p:not(.ep-etiqueta) { font-size: 18px; line-height: 1.7; color: #775865; }
+.ep-etiqueta { font: 11px/1.6 Arial, sans-serif; color: #a07184; letter-spacing: 1px; }
+.ep-etiqueta a { color: inherit; }
+.ep-estrella { color: #c78da5; text-align: center; border-bottom: 1px solid #e6cbd6; padding-bottom: 15px; margin-bottom: 25px; }
+.ep-foto { display: block; aspect-ratio: 1; background: #f8cedd; }
+.ep-polaroid { position: relative; padding: 18px 18px 40px; border: 1px solid #e4d4da; background: #fffafa; transform: rotate(3deg); box-shadow: 7px 9px 0 #eee4e8; max-width: 440px; width: 100%; }
+.ep-polaroid::before, .temporada-foto::before { content: ''; position: absolute; width: 33%; height: 23px; top: -12px; left: 33%; background: #e9b6c9b3; transform: rotate(-5deg); border-inline: 1px dashed #fff; }
+.ep-enlace { display: inline-block; margin-top: 22px; color: #835066; padding: 12px 18px; background: #f3d9e3; text-decoration: none; font: 12px Arial, sans-serif; }
+.ep-temporadas { padding: 30px 5% 45px; background: #fffafa; }
+.ep-temporadas h2, .ep-destacados > h2 { font-size: clamp(28px, 3vw, 40px); text-align: center; font-weight: normal; margin-bottom: 35px; }
+.ep-temporadas-grid { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 23px; }
+.temporada-foto { position: relative; display: flex; flex-direction: column; gap: 7px; padding: 10px 10px 16px; text-align: center; border: 2px solid #e7dbe0; background: #fffdfc; color: #49383f; text-decoration: none; }
+.temporada-foto strong { font-size: 27px; font-weight: normal; margin-top: 7px; }
+.temporada-foto > span:not(.ep-foto), .temporada-foto small { font: 10px Arial, sans-serif; }
+.temporada-foto small { color: #9c7484; }
+.temporada-foto[aria-current="true"] { border-color: #db94b2; box-shadow: 4px 5px 0 #f4dce6; }
+.temporada-foto:hover { border-color: #db94b2; }
+.ep-resumenes { background: #fbf0f3; border-block: 4px solid #e8c8d3; padding: 30px 8%; }
+.temporada-resumen { max-width: 800px; margin: auto; text-align: center; scroll-margin-top: 25px; }
+.temporada-resumen + .temporada-resumen { margin-top: 35px; }
+.temporada-resumen[hidden] { display: none; }
+.temporada-resumen h3 { font-size: 31px; font-weight: normal; margin: 12px 0; color: #a46e85; }
+.temporada-resumen > p:not(.ep-etiqueta) { font-size: 17px; line-height: 1.7; }
+.temporada-resumen a { display: inline-block; margin-top: 16px; font: 11px Arial, sans-serif; color: #915d73; text-decoration: none; }
+.ep-destacados { padding: 35px 7% 45px; }
+.ep-aclaracion { text-align: center; font: 13px/1.6 Arial, sans-serif; color: #947381; margin: -15px auto 30px; max-width: 700px; }
+.ep-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 25px; align-items: start; }
+.ep-tarjeta { border: 3px solid #f6c9da; background: #fff; }
+.ep-tarjeta .ep-foto { aspect-ratio: 1.22; }
+.ep-texto { padding: 18px 15px; }
+.ep-texto h3 { font-size: 24px; font-weight: normal; line-height: 1.15; margin: 10px 0 15px; }
+.ep-texto p:not(.ep-etiqueta) { font: 14px/1.7 Arial, sans-serif; margin-bottom: 18px; }
+.ep-texto summary { cursor: pointer; border: 1px solid #edbbcf; padding: 10px; font: 10px/1.5 Arial, sans-serif; color: #855368; }
+.ep-texto h4 { font-size: 18px; font-weight: normal; margin: 18px 0 10px; color: #a46e85; }
+.ep-fuentes { text-align: center; font: 10px/1.6 Arial, sans-serif; color: #9c7887; margin-top: 30px; }
+.ep-fuentes a { color: inherit; }
+.pagina-episodios :focus-visible { outline: 2px solid #a96885; outline-offset: 4px; }
+@media (max-width: 1000px) { .ep-temporadas-grid { grid-template-columns: repeat(3, 1fr); row-gap: 30px; } .ep-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 650px) { .ep-portada { grid-template-columns: 1fr; padding: 35px 25px; gap: 35px; } .ep-polaroid { max-width: 330px; margin: auto; } .ep-temporadas { padding-inline: 24px; } .ep-temporadas-grid { gap: 30px 12px; } .ep-destacados { padding: 30px 24px; } .ep-grid { grid-template-columns: 1fr; } }
+
+/* Portadas completas y fotogramas de cada episodio. */
+.ep-portada-imagen { display: block; width: 100%; height: auto; }
+.ep-foto { position: relative; overflow: hidden; }
+.ep-foto > img { display: block; width: 100%; height: 100%; position: absolute; inset: 0; object-fit: cover; }
+.temporada-foto .ep-foto { aspect-ratio: 2 / 3; }
+.temporada-foto .ep-foto > img { object-fit: contain; background: #fffafa; }
+.ep-tarjeta .ep-foto { aspect-ratio: 4 / 3; }
+.ep-portada .ep-polaroid { max-width: 600px; justify-self: center; }
+@media (min-width: 651px) {
+  .ep-portada { grid-template-columns: minmax(0, .85fr) minmax(0, 1.3fr); gap: 6%; }
+}

@@ -1,0 +1,416 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Sex and the City</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="pagina-inicio">
+
+  <header class="site-header">
+    <a class="logo" href="index.html" aria-label="Sex and the City · Inicio">
+      <img src="imagenes/logo.png" alt="">
+      <img src="imagenes/logo2sex.png" alt="Sex and the City" class="logo-secundaria">
+    </a>
+    <nav id="site-nav" aria-label="Navegación principal">
+      <a href="index.html" aria-current="page">INICIO</a>
+      <a href="personajes.html">PERSONAJES</a>
+      <a href="columnas.html">CARRIE’S COLUMNS</a>
+      <a href="closet.html">CARRIE’S CLOSET</a>
+      <a href="galeria.html">GALERÍA</a>
+      <a href="episodios.html">EPISODIOS</a>
+    </nav>
+    <button class="menu" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu-overlay" aria-haspopup="dialog">☰</button>
+  </header>
+
+
+  <main>
+
+    <!-- HERO -->
+
+    <section class="hero">
+      <span class="sticker sticker-hero" aria-hidden="true">✧</span>
+
+      <div class="hero-text">
+
+        <h1>
+          SEX AND <br>
+          THE CITY
+        </h1>
+
+        <p>
+          NEW YORK. FASHION. <br>
+          FRIENDSHIP. LOVE.
+        </p>
+
+        <a href="#newyork" class="boton">
+          ENTRA A LA CIUDAD →
+        </a>
+
+      </div>
+
+
+      <div class="hero-imagen">
+
+        <img
+          src="imagenes/camara-carrie.png"
+          alt="Sex and the City cámara">
+
+      </div>
+
+    </section>
+
+
+    <!-- PERSONAJES -->
+
+    <section
+      class="personajes"
+      id="personajes">
+      <span class="sticker sticker-personajes" aria-hidden="true">♡</span>
+
+      <h2>CONOCE A LAS CHICAS</h2>
+
+
+      <div class="personajes-grid">
+
+        <article>
+          <a href="#carrie" class="personaje-link">
+
+            <img
+              src="imagenes/carrie.png"
+              alt="Carrie">
+
+            <h3>
+              CARRIE <br>
+              BRADSHAW
+            </h3>
+
+            <span>→</span>
+
+          </a>
+        </article>
+
+
+        <article>
+          <a href="#samantha" class="personaje-link">
+
+            <img
+              src="imagenes/samantha.png"
+              alt="Samantha">
+
+            <h3>
+              SAMANTHA <br>
+              JONES
+            </h3>
+
+            <span>→</span>
+
+          </a>
+        </article>
+
+
+        <article>
+          <a href="#charlotte" class="personaje-link">
+
+            <img
+              src="imagenes/charlotte.png"
+              alt="Charlotte">
+
+            <h3>
+              CHARLOTTE <br>
+              YORK
+            </h3>
+
+            <span>→</span>
+
+          </a>
+        </article>
+
+
+        <article>
+          <a href="#miranda" class="personaje-link">
+
+            <img
+              src="imagenes/miranda.png"
+              alt="Miranda">
+
+            <h3>
+              MIRANDA <br>
+              HOBBES
+            </h3>
+
+            <span>→</span>
+
+          </a>
+        </article>
+
+      </div>
+
+      <div class="explorar-personajes"><span aria-hidden="true">✧</span><p>Cada una tiene una historia. Conocelas un poquito más.</p><a href="personajes.html">EXPLORAR TODOS LOS PERSONAJES ↗</a></div>
+    </section>
+
+
+    <!-- DETALLES DE PERSONAJES -->
+
+    <dialog class="detalle-personajes" aria-label="Conoce a las chicas">
+      <section id="carrie" class="detalle-personaje" aria-labelledby="titulo-carrie" hidden>
+        <button class="cerrar-detalle" type="button" aria-label="Cerrar información de Carrie Bradshaw">×</button>
+        <div class="detalle-camara" role="img" aria-label="Retrato de Carrie Bradshaw en una cámara rosa">
+          <span class="camara-marca" aria-hidden="true">SATC · memories</span>
+          <div class="camara-pantalla"><img src="imagenes/carrie-camara.jpeg" alt="" /></div>
+          <div class="camara-controles" aria-hidden="true"><span class="camara-flash"></span><span class="camara-rueda">✦</span><span class="camara-menu">MENU · ▶</span><span class="camara-dial">OK</span><span>◉ ▧</span></div>
+          <span class="camara-pie" aria-hidden="true">NEW YORK CITY</span>
+        </div>
+        <div class="detalle-info">
+          <span class="detalle-etiqueta">MEET THE GIRLS</span>
+          <h2 id="titulo-carrie">Carrie Bradshaw</h2>
+          <p class="detalle-lema">La ciudad, los zapatos y una buena historia.</p>
+          <p>Columnista y escritora, Carrie encuentra inspiración en las citas, las conversaciones con sus amigas y las calles de Manhattan. Su mirada curiosa convierte las dudas sobre el amor en historias que todas podemos reconocer.</p>
+          <p>Creativa, romántica y apasionada por la moda, vive entre zapatos inolvidables y grandes preguntas. Samantha, Charlotte y Miranda son su compañía incondicional en cada nuevo capítulo.</p>
+          <button type="button" class="volver-detalle">VOLVER A LAS CHICAS <span aria-hidden="true">↗</span></button>
+        </div>
+      </section>
+
+      <section id="samantha" class="detalle-personaje" aria-labelledby="titulo-samantha" hidden>
+        <button class="cerrar-detalle" type="button" aria-label="Cerrar información de Samantha Jones">×</button>
+        <div class="detalle-camara" role="img" aria-label="Retrato de Samantha Jones en una cámara rosa">
+          <span class="camara-marca" aria-hidden="true">SATC · memories</span>
+          <div class="camara-pantalla"><img src="imagenes/samantha-camara.jpeg" alt="" /></div>
+          <div class="camara-controles" aria-hidden="true"><span class="camara-flash"></span><span class="camara-rueda">✦</span><span class="camara-menu">MENU · ▶</span><span class="camara-dial">OK</span><span>◉ ▧</span></div>
+          <span class="camara-pie" aria-hidden="true">NEW YORK CITY</span>
+        </div>
+        <div class="detalle-info">
+          <span class="detalle-etiqueta">MEET THE GIRLS</span>
+          <h2 id="titulo-samantha">Samantha Jones</h2>
+          <p class="detalle-lema">Segura de sí misma. Libre por elección.</p>
+          <p>Samantha trabaja en relaciones públicas y se mueve por Nueva York con confianza, ambición y un sentido del humor directo. Sabe lo que quiere y no teme ir a buscarlo.</p>
+          <p>Independiente y leal, defiende el placer de vivir bajo sus propias reglas. Detrás de su actitud audaz hay una amiga generosa, siempre dispuesta a apoyar a las chicas sin juzgarlas.</p>
+          <button type="button" class="volver-detalle">VOLVER A LAS CHICAS <span aria-hidden="true">↗</span></button>
+        </div>
+      </section>
+
+      <section id="charlotte" class="detalle-personaje" aria-labelledby="titulo-charlotte" hidden>
+        <button class="cerrar-detalle" type="button" aria-label="Cerrar información de Charlotte York">×</button>
+        <div class="detalle-camara" role="img" aria-label="Retrato de Charlotte York en una cámara rosa">
+          <span class="camara-marca" aria-hidden="true">SATC · memories</span>
+          <div class="camara-pantalla"><img src="imagenes/charlotte-camara.jpeg" alt="" /></div>
+          <div class="camara-controles" aria-hidden="true"><span class="camara-flash"></span><span class="camara-rueda">✦</span><span class="camara-menu">MENU · ▶</span><span class="camara-dial">OK</span><span>◉ ▧</span></div>
+          <span class="camara-pie" aria-hidden="true">NEW YORK CITY</span>
+        </div>
+        <div class="detalle-info">
+          <span class="detalle-etiqueta">MEET THE GIRLS</span>
+          <h2 id="titulo-charlotte">Charlotte York</h2>
+          <p class="detalle-lema">Una romántica con las ideas claras.</p>
+          <p>Charlotte trabaja en el mundo del arte y sueña con construir una vida llena de amor y familia. Elegante y detallista, conserva la esperanza incluso cuando las relaciones no salen como esperaba.</p>
+          <p>Su visión tradicional convive con una gran capacidad para crecer y volver a empezar. Aporta ternura al grupo y defiende con determinación a las personas que quiere.</p>
+          <button type="button" class="volver-detalle">VOLVER A LAS CHICAS <span aria-hidden="true">↗</span></button>
+        </div>
+      </section>
+
+      <section id="miranda" class="detalle-personaje" aria-labelledby="titulo-miranda" hidden>
+        <button class="cerrar-detalle" type="button" aria-label="Cerrar información de Miranda Hobbes">×</button>
+        <div class="detalle-camara" role="img" aria-label="Retrato de Miranda Hobbes en una cámara rosa">
+          <span class="camara-marca" aria-hidden="true">SATC · memories</span>
+          <div class="camara-pantalla"><img src="imagenes/miranda-camara.jpeg" alt="" /></div>
+          <div class="camara-controles" aria-hidden="true"><span class="camara-flash"></span><span class="camara-rueda">✦</span><span class="camara-menu">MENU · ▶</span><span class="camara-dial">OK</span><span>◉ ▧</span></div>
+          <span class="camara-pie" aria-hidden="true">NEW YORK CITY</span>
+        </div>
+        <div class="detalle-info">
+          <span class="detalle-etiqueta">MEET THE GIRLS</span>
+          <h2 id="titulo-miranda">Miranda Hobbes</h2>
+          <p class="detalle-lema">Inteligencia, ambición y mucho humor.</p>
+          <p>Miranda es abogada y enfrenta la vida en Nueva York con una mirada práctica y un humor mordaz. Valora su independencia y se exige tanto en su carrera como en sus relaciones.</p>
+          <p>Aunque suele ser la voz más escéptica del grupo, su lealtad es incondicional. Entre el trabajo, la amistad y el amor, aprende a dar espacio a su lado más vulnerable.</p>
+          <button type="button" class="volver-detalle">VOLVER A LAS CHICAS <span aria-hidden="true">↗</span></button>
+        </div>
+      </section>
+
+    </dialog>
+
+
+    <!-- CARRIE COLUMN -->
+
+    <section class="column" id="column" aria-label="Carrie's Column">
+      <img
+        class="column-collage"
+        src="imagenes/carrie-laptop.png"
+        alt="Carrie's Column. No pude evitar preguntarme… Reflexiones, preguntas y verdades sobre el amor, el sexo y la vida en Nueva York. Carrie escribe en su computadora junto a un collage de libros y una hoja de cuaderno."
+        width="1552"
+        height="758">
+      <a class="column-abrir" href="columnas.html" aria-label="Leer las columnas de Carrie"></a>
+    </section>
+
+
+    <!-- CLOSET -->
+
+    <section
+      class="closet"
+      id="closet">
+      <span class="sticker sticker-closet" aria-hidden="true">✦</span>
+
+      <h2>
+        <a class="closet-titulo-link" href="closet.html">💄 CARRIE'S CLOSET ↗</a>
+      </h2>
+
+
+      <div class="closet-grid">
+
+        <article><a class="closet-inicio-link" href="closet.html#ropa">
+
+          <img
+            src="imagenes/looks.png"
+            alt="Looks icónicos">
+
+          <h3>
+            LOOKS ICONICOS →
+          </h3>
+
+        </a></article>
+
+
+        <article><a class="closet-inicio-link" href="closet.html#zapatos">
+
+          <img
+            src="imagenes/zapatos.png"
+            alt="Zapatos">
+
+          <h3>
+            ZAPATOS →
+          </h3>
+
+        </a></article>
+
+
+        <article><a class="closet-inicio-link" href="closet.html#bolsos">
+
+          <img
+            src="imagenes/bolso.png"
+            alt="Bolsos">
+
+          <h3>
+            BOLSOS →
+          </h3>
+
+        </a></article>
+
+      </div>
+
+    </section>
+
+
+    <!-- NEW YORK -->
+
+    <section
+      class="new-york"
+      id="newyork">
+
+      <div class="ny-text">
+
+        <h2>
+          NEW YORK <br>
+          CITY
+        </h2>
+
+        <p>
+          LA CIUDAD QUE TAMBIÉN ES <br>
+          PROTAGONISTA.
+        </p>
+
+        <a
+          href="galeria.html"
+          class="boton">
+
+          EXPLORA LA CIUDAD →
+
+        </a>
+
+      </div>
+
+
+      <div class="ny-imagen">
+
+        <img
+          src="imagenes/new-york.png"
+          alt="New York">
+
+      </div>
+
+    </section>
+
+
+    <!-- EPISODIOS -->
+
+    <section
+      class="episodios"
+      id="episodios">
+      <span class="sticker sticker-episodios" aria-hidden="true">✧</span>
+
+      <div class="episodios-titulo">
+
+        <h2>
+          EPISODIOS
+        </h2>
+
+        <p>
+          6 TEMPORADAS, 94 EPISODIOS <br>
+          HISTORIAS QUE MARCARON UNA GENERACIÓN.
+        </p>
+
+      </div>
+
+
+      <div class="temporadas temporadas-inicio"><a href="episodios.html#temporada-1" aria-label="Ver resumen de temporada 1"><strong>01</strong><span>TEMPORADA 1</span><small>12 capítulos · 1998</small><em>Ver resumen ↗</em></a><a href="episodios.html#temporada-2" aria-label="Ver resumen de temporada 2"><strong>02</strong><span>TEMPORADA 2</span><small>18 capítulos · 1999</small><em>Ver resumen ↗</em></a><a href="episodios.html#temporada-3" aria-label="Ver resumen de temporada 3"><strong>03</strong><span>TEMPORADA 3</span><small>18 capítulos · 2000</small><em>Ver resumen ↗</em></a><a href="episodios.html#temporada-4" aria-label="Ver resumen de temporada 4"><strong>04</strong><span>TEMPORADA 4</span><small>18 capítulos · 2001–2002</small><em>Ver resumen ↗</em></a><a href="episodios.html#temporada-5" aria-label="Ver resumen de temporada 5"><strong>05</strong><span>TEMPORADA 5</span><small>8 capítulos · 2002</small><em>Ver resumen ↗</em></a><a href="episodios.html#temporada-6" aria-label="Ver resumen de temporada 6"><strong>06</strong><span>TEMPORADA 6</span><small>20 capítulos · 2003–2004</small><em>Ver resumen ↗</em></a></div><div class="explorar-personajes"><p>Elegí una temporada para descubrir su historia.</p><a href="episodios.html">EXPLORAR TEMPORADAS Y EPISODIOS ↗</a></div>
+    </section>
+
+
+    <!-- FINAL -->
+
+    <section class="final cierre-referencia" aria-label="Y así, sin más">
+      <div class="final-imagen"><img src="imagenes/chicas-blanco-negro.png" alt="Carrie, Samantha, Charlotte y Miranda en una foto de recuerdo"></div>
+      <div class="final-text">
+        <h2><span>Y así,</span><span><i aria-hidden="true">☆</i>sin más...</span></h2>
+        <p>Amor, amistad, moda y<br>Noches inolvidables en Nueva York</p>
+      </div>
+      <div class="final-copa"><img src="imagenes/copa-chicas.png" alt="Las cuatro amigas sobre una copa de cosmopolitan"></div>
+    </section>
+
+  </main>
+
+
+  <footer class="site-footer">
+      <a href="index.html" aria-current="page">INICIO</a>
+      <a href="personajes.html">PERSONAJES</a>
+      <a href="columnas.html">CARRIE’S COLUMNS</a>
+      <a href="closet.html">CARRIE’S CLOSET</a>
+      <a href="galeria.html">GALERÍA</a>
+      <a href="episodios.html">EPISODIOS</a>
+  </footer>
+
+
+  <script src="scrips.js"></script>
+
+  <dialog class="menu-overlay" id="menu-overlay" aria-labelledby="menu-titulo">
+    <button class="menu-cerrar" type="button" aria-label="Cerrar menú">×</button>
+    <span class="menu-adorno" aria-hidden="true">♡</span>
+    <h2 id="menu-titulo">Nos encontramos acá.</h2>
+    <nav class="menu-enlaces" aria-label="Menú de la superposición">
+      <a href="index.html" aria-current="page">INICIO</a>
+      <a href="personajes.html">PERSONAJES</a>
+      <a href="columnas.html">CARRIE’S COLUMNS</a>
+      <a href="closet.html">CARRIE’S CLOSET</a>
+      <a href="galeria.html">GALERÍA</a>
+      <a href="episodios.html">EPISODIOS</a>
+      <a class="menu-contacto" href="contacto.html">CONTACTO ↗</a>
+    </nav>
+  </dialog>
+  <script src="navegacion.js"></script>
+<script src="stickers.js"></script></body>
+
+</html>
