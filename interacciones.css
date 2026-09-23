@@ -1,0 +1,28 @@
+/* Interacciones compartidas, sin ocultar contenido cuando JavaScript no está disponible. */
+@view-transition { navigation: auto; }
+::view-transition-old(root) { animation: salida-pagina .18s ease both; }
+::view-transition-new(root) { animation: entrada-pagina .25s ease both; }
+@keyframes salida-pagina { to { opacity:0; } }
+@keyframes entrada-pagina { from { opacity:0; } to { opacity:1; } }
+.indice-secciones { display:flex; flex-wrap:wrap; justify-content:center; gap:8px 20px; padding:18px 5%; border-bottom:1px solid #ead1dc; background:#fcf7f8; }
+.indice-secciones a { font:12px/1.6 Georgia,serif; color:#86556c; text-decoration:none; border-bottom:1px solid transparent; padding:4px 0; }
+.indice-secciones a:hover { border-bottom-color:currentColor; }
+.volver-arriba { position:fixed; right:20px; bottom:20px; z-index:30; width:44px; height:44px; border:1px solid #bd8da3; border-radius:50%; background:#f6e5ed; color:#73475d; font:24px Georgia,serif; cursor:pointer; box-shadow:0 4px 12px #69425220; }
+.volver-arriba[hidden] { display:none; }
+body:has(dialog[open]) .volver-arriba { visibility:hidden; }
+main strong { font-weight:700; }
+main > section { scroll-margin-top:24px; }
+.contacto-autora { padding-bottom:25px; margin-bottom:30px; border-bottom:1px solid #e8ccda; }
+a,button,summary { -webkit-tap-highlight-color:#edcbdc; }
+a:focus-visible,button:focus-visible,summary:focus-visible { outline:2px solid #a75e81; outline-offset:5px; }
+@media (prefers-reduced-motion:no-preference) {
+  a,button,summary { transition:color .2s,background-color .2s,box-shadow .2s; }
+  dialog[open] { animation:entrada-pagina .23s ease; }
+  .personaje-card,.reparto-card,.episodio-card { transition:transform .25s,box-shadow .25s; }
+  .personaje-card:hover,.reparto-card:hover,.episodio-card:hover { transform:translateY(-4px); box-shadow:0 8px 20px #73465b18; }
+}
+@media (prefers-reduced-motion:reduce) {
+  html { scroll-behavior:auto !important; }
+  *,*::before,*::after { animation-duration:.01ms !important; transition-duration:.01ms !important; scroll-behavior:auto !important; }
+}
+@media(max-width:600px) { .indice-secciones { gap:5px 14px; } .volver-arriba { right:12px; bottom:12px; } }
