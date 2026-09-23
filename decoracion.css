@@ -1,0 +1,51 @@
+/* Rosa viejo suave en las secciones inferiores.
+   La cabecera y las portadas conservan sus estilos originales. */
+body main > :is(.personajes, .reparto-principales, .columnas-consejos, .ep-temporadas, .contacto-faq) {
+  background-color: #f5edef;
+  background-image: radial-gradient(#b796a514 .8px, transparent .8px);
+  background-size: 14px 14px;
+}
+body main > :is(.closet, .reparto-secundarios, .columnas-lecturas, .ep-destacados, .contacto-correo) {
+  background: #eee0e5;
+}
+body main > :is(.columnas-frases, .ep-resumenes, .album-closet) {
+  background: #e8d5dd;
+}
+body main > .galeria-seccion { background: #f5edef; }
+body main > .galeria-seccion:nth-of-type(odd) { background: #eee0e5; }
+body main > .closet-categoria { background: #f5edef; }
+body main > .closet-categoria:nth-of-type(odd) { background: #eee0e5; }
+.closet-indice { background: #e8d5dd; border-color: #d9bfc9; }
+.coleccion-zapatos { background: #eadde1; border-color: #d9c6ce; }
+.contacto-formulario { background: #ecdae2; }
+.contacto-inspiracion { background: #faf5f6; border-color: #dfccd4; }
+.contacto-preguntas details { background: #faf5f6; border-color: #dfccd4; }
+body main > .final { background-color: #eee0e5; }
+
+/* Los recortes son decorativos: nunca interceptan los enlaces. */
+.recortes-decorativos {
+  position: relative;
+  isolation: isolate;
+  min-height: 130px;
+  padding: 16px clamp(28px, 9vw, 145px);
+  background-color: #f5eaed;
+  background-image: repeating-linear-gradient(-45deg, transparent 0 10px, #ffffff20 10px 12px);
+  border-block: 1px dashed #c8aab650;
+}
+.recortes-decorativos:nth-of-type(even) { background-color: #eedfe4; }
+.recortes-decorativos::before,
+.recortes-decorativos::after {
+  position: absolute;
+  z-index: -1;
+  color: #a47e8e;
+  font: italic 28px Georgia, serif;
+  pointer-events: none;
+}
+.recortes-decorativos::before { content: '✧ · ♡'; left: 28%; top: 28px; transform: rotate(-12deg); }
+.recortes-decorativos::after { content: 'xo, xo'; right: 24%; bottom: 24px; transform: rotate(9deg); }
+.recorte-decorativo { filter: drop-shadow(2px 4px 1px #8c45632b); }
+@media (max-width: 600px) {
+  .recortes-decorativos { min-height: 102px; padding: 10px 22px; }
+  .recortes-decorativos::before { font-size: 18px; left: 29%; top: 15px; }
+  .recortes-decorativos::after { font-size: 18px; right: 25%; bottom: 14px; }
+}
