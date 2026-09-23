@@ -90,7 +90,7 @@
 .consejo-extra p { margin-top: 16px; font-size: 16px; line-height: 1.6; }
 .columnas-lecturas { background: #faeff1; padding: 22px 4% 28px; }
 .lecturas-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 9px; align-items: start; }
-.lectura { border: 4px solid #ffccdc; background: white; height: 100%; }
+.lectura { border: 4px solid #ffccdc; background: white; display: flex; flex-direction: column; align-self: start; }
 .lectura-imagen { aspect-ratio: 1.22; }
 .lectura-texto { padding: 15px 10px; }
 .categoria { font: 9px Arial, sans-serif; letter-spacing: 1.2px; color: #a76d82; }
