@@ -1,8 +1,8 @@
 /* Ventanas CSS sobre las láminas originales: cada detalle conserva su imagen. */
 document.addEventListener('DOMContentLoaded', () => {
   const sheets = {
-    serie: ['images/stickers-serie.jpeg', 736, 1308],
-    moda: ['images/stickers-moda.jpeg', 675, 1200]
+    serie: ['imagenes/stickers-serie.jpeg', 736, 1308],
+    moda: ['imagenes/stickers-moda.jpeg', 675, 1200]
   };
   const stickers = [
     ['serie', 15, 48, 122, 90], // beso
