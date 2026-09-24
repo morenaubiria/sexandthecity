@@ -1,4 +1,15 @@
 document.addEventListener('DOMContentLoaded', () => {
+  // Compatibilidad con navegadores sin agrupamiento nativo de <details>.
+  const preguntas = document.querySelectorAll('.contacto-preguntas details');
+  preguntas.forEach(pregunta => {
+    pregunta.addEventListener('toggle', () => {
+      if (!pregunta.open) return;
+      preguntas.forEach(otra => {
+        if (otra !== pregunta) otra.open = false;
+      });
+    });
+  });
+
   const form = document.querySelector('#contacto-form');
   const message = document.querySelector('#mensaje');
   const download = document.querySelector('#descargar-nota');
